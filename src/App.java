@@ -18,5 +18,18 @@ public class App {
 
         Cat meow = new Cat(false, "milk", 4);
         System.out.println(meow.isVegetarian()); 
+
+        System.out.println("============ Method Overloading ===============");
+
+        Overloading o1 = new Overloading();
+        o1.main();
+        Overloading o2 = new Overloading(1, 2);
+        o2.main();
+        Overloading o3 = new Overloading(2, "mine");
+        o3.main();
+
+        System.out.println("================ Method Overriding ==============");
+        Tiger t1 = new Tiger();
+        t1.sleep();
     }
 }
