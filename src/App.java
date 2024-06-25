@@ -12,5 +12,11 @@ public class App {
         }
         System.out.println("============================================");
 
+        Blocks b = new Blocks();
+        b.makeCall();
+        System.out.println("================= Inheritance Example ==============");
+
+        Cat meow = new Cat(false, "milk", 4);
+        System.out.println(meow.isVegetarian()); 
     }
 }
