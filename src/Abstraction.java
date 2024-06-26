@@ -8,13 +8,12 @@ public class Abstraction {
 
 abstract class Payment {
     public abstract void initiatePayment(double amount);
-
     public abstract void processPayment();
-
     public abstract void confirmPayment();
 }
 
 class CreditCardPayment extends Payment {
+    int cvv = 123;
     @Override
     public void initiatePayment(double amount) {
         System.out.println("Initiating credit card payment of $" + amount);
@@ -30,6 +29,7 @@ class CreditCardPayment extends Payment {
         System.out.println("Credit card payment confirmed.");
     }
 }
+
 
 class PaymentProcessor {
     private Payment payment;
